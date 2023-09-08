@@ -194,32 +194,24 @@ namespace HelloDungeon
             return inputReceived;
         }
 
-        /// <summary>
-        /// Displays a room based on the players current area
-        /// </summary>
-        void DisplayCurrentRoom()
-        {
-            if (currentArea >= 1)
-            {
-                Room1();
-            }
-            if (currentArea >= 2)
-            {
-                Room2();
-            }
-            if (currentArea >= 3)
-            {
-                Room3();
-            }
-        }
-
         public void Run()
         {
             //Loop while game isn't over
             while (gameOver)
             {
                 //Print the current room to the screen
-                DisplayCurrentRoom();
+                if (currentArea >= 1)
+                {
+                    Room1();
+                }
+                if (currentArea >= 2)
+                {
+                    Room2();
+                }
+                if (currentArea >= 3)
+                {
+                    Room3();
+                }
             }
                 //If the player lost or beat the game...
                 if (playerIsAlive == false || currentArea == 3)
