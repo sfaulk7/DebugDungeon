@@ -196,7 +196,7 @@ namespace HelloDungeon
                 //...set their current area to be the start and update the player state to be alive
                 currentArea = 1;
                 gameOver = false;
-                int health = 20;
+                health = 20;
                 playerIsAlive = true;
             }
             //Otherwise if the player wants to quit...
